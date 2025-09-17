@@ -41,12 +41,26 @@ function Project() {
 
             {/* Bagian kanan: Gambar */}
             <div className="project-images">
-              <img src="/alatfull.jpg" alt="alat full" className="image-top" />
+              <img
+                src={`${import.meta.env.BASE_URL}alatfull.jpg`}
+                alt="alat full"
+                className="image-top"
+              />
               <div className="image-row">
-                <img src="/setengah.jpg" alt="alat setengah" />
-                <img src="/pcb.jpg" alt="pcb" />
+                <img
+                  src={`${import.meta.env.BASE_URL}setengah.jpg`}
+                  alt="alat setengah"
+                />
+                <img
+                  src={`${import.meta.env.BASE_URL}pcb.jpg`}
+                  alt="pcb"
+                />
               </div>
-              <img src="/ui.jpg" alt="ui app" className="image-bottom" />
+              <img
+                src={`${import.meta.env.BASE_URL}ui.jpg`}
+                alt="ui app"
+                className="image-bottom"
+              />
             </div>
           </div>
         </div>

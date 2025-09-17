@@ -20,27 +20,36 @@ function Home({ handlePageChange }) {
 
   return (
     <section id="home" className="home-section">
- <div className="profile-wrapper">
-  {/* Garis Dekorasi */}
-  <img
-    src="/garisre.png"
-    alt="garis dekorasi"
-    className={`garis-dekorasi ${showGaris ? "show" : ""}`}
-  />
+      <div className="profile-wrapper">
+        {/* Garis Dekorasi */}
+        <img
+          src={`${import.meta.env.BASE_URL}garisre.png`}
+          alt="garis dekorasi"
+          className={`garis-dekorasi ${showGaris ? "show" : ""}`}
+        />
 
-  {/* Foto Profil */}
-  <div
-    className="profile-container"
-    onMouseEnter={() => setShowGaris(true)}   // hover masuk
-    onMouseLeave={() => setShowGaris(false)} // hover keluar
-    onClick={() => setShowGaris(prev => !prev)} // toggle klik (mobile)
-  >
-    <img src="/foto.jpg" alt="Profile" className="profile-image" />
-  </div>
-  <div className="panah-dekorasi">
-    <img src="/panahme.png" alt="Arrow" className="panah-image" />
-  </div>
-</div>
+        {/* Foto Profil */}
+        <div
+          className="profile-container"
+          onMouseEnter={() => setShowGaris(true)}
+          onMouseLeave={() => setShowGaris(false)}
+          onClick={() => setShowGaris((prev) => !prev)}
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}foto.jpg`}
+            alt="Profile"
+            className="profile-image"
+          />
+        </div>
+
+        <div className="panah-dekorasi">
+          <img
+            src={`${import.meta.env.BASE_URL}panahme.png`}
+            alt="Arrow"
+            className="panah-image"
+          />
+        </div>
+      </div>
 
       {/* Teks */}
       <div className="text-container">
@@ -83,7 +92,10 @@ function Home({ handlePageChange }) {
         <div className="projects-grid">
           <div className="project-card">
             <div className="project-image-placeholder">
-              <img src="/alatfull.jpg" alt="SedimTrack-IoT" />
+              <img
+                src={`${import.meta.env.BASE_URL}alatfull.jpg`}
+                alt="SedimTrack-IoT"
+              />
             </div>
             <div className="project-category">FINAL PROJECT</div>
             <h3>SedimTrack-IoT: IoT-Based Sediment Image Scanner</h3>
