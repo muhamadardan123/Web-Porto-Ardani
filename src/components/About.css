@@ -1,0 +1,255 @@
+/* ==============================
+   GLOBAL PAGE STYLE
+============================== */
+.about-page {
+    padding: 40px 20px 80px; /* Atas 40px, samping 20px, bawah 80px */
+    background: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+  
+.about-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+  
+/* ==============================
+   TITLES
+============================== */
+.sub-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #c6d870;
+    border-bottom: 2px solid #c6d870;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+  
+/* ==============================
+   SECTION BLOCKS
+============================== */
+.section-block {
+    margin-bottom: 60px;
+}
+  
+/* ==============================
+   PROFILE TEXT
+============================== */
+.profile-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #ddd;
+    text-align: justify;
+}
+  
+/* ==============================
+   EDUCATION & WORK ITEMS
+============================== */
+.edu-item {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.edu-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+  
+.edu-item h4 {
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+}
+  
+.edu-item p {
+    margin: 2px 0;
+    color: #ccc;
+}
+  
+.gpa {
+    font-weight: bold;
+    color: #c6d870;
+}
+  
+/* ==============================
+   ORG / WORK EXPERIENCE
+============================== */
+.hover-card {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+  
+.hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+  
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.card-header h4 {
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+}
+  
+.org-year {
+    font-size: 14px;
+    color: #ccc;
+}
+  
+/* body default: hidden */
+.card-body {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
+}
+  
+/* muncul ketika hover */
+.hover-card:hover .card-body {
+    max-height: 500px; /* cukup besar agar muat semua isi */
+    opacity: 1;
+    margin-top: 12px;
+}
+  
+.card-body ul {
+    list-style: disc;
+    padding-left: 30px;
+}
+  
+.card-body li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #c6d870;
+}
+  
+/* ==============================
+   INTELLECTUAL PROPERTY
+============================== */
+.ip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+  
+.ip-card {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.ip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+  
+.ip-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+  
+.ip-icon {
+    font-size: 22px;
+    color: #c6d870;
+}
+  
+.ip-sub {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+  
+.ip-meta {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+  
+.ip-desc {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ddd;
+}
+  
+.image-wrapper {
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+}
+  
+.ip-image {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+  
+.ip-image.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+  
+.image-wrapper:hover .ip-image {
+    opacity: 0;
+}
+  
+.image-wrapper:hover .ip-image.hover {
+    opacity: 1;
+}
+  
+/* Link style (untuk IP & Certifications) */
+.ip-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #c6d870;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+  
+.ip-link:hover {
+    text-decoration: underline;
+    color: #a2b94d;
+}
+
+/* ==============================
+   CERTIFICATIONS
+============================== */
+.cert-link {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #c6d870;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+  
+.cert-link:hover {
+    text-decoration: underline;
+    color: #a2b94d;
+}

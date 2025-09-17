@@ -1,0 +1,158 @@
+.navbar {
+  position: relative; /* tidak lagi fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background: #111; /* tetap ada background */
+  border-bottom: 2px solid #fff; /* Garis statis */
+}
+
+/* Brand */
+.navbar-brand {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Desktop Nav */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-item .nav-link {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.05rem;
+  cursor: pointer;
+  padding: 6px 0;
+  text-decoration: none;
+
+  /* Hilangkan box biru */
+  outline: none;
+}
+
+.nav-item .nav-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-link.active {
+  color: #C6D870;
+}
+
+/* Desktop Social Links */
+.desktop-social-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.desktop-social-links a {
+  color: #fff;
+  font-size: 1.2rem;
+  outline: none;
+  text-decoration: none;
+}
+
+.desktop-social-links a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.desktop-social-links a:hover {
+  color: #C6D870;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile menu */
+.nav-list.mobile {
+  display: none;
+  flex-direction: column;
+  background-color: #111;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 220px;
+  border-left: 2px solid #333;
+  padding: 10px;
+  gap: 10px;
+}
+
+.nav-list.mobile.open {
+  display: flex;
+}
+
+.nav-list.mobile .nav-item {
+  margin-bottom: 10px;
+}
+
+/* Semua item mobile vertikal */
+.nav-list.mobile .nav-item button,
+.nav-list.mobile .nav-item a {
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  text-align: left;
+  padding: 6px 0;
+  display: block;
+  text-decoration: none;
+  outline: none;
+}
+
+.nav-list.mobile .nav-item button:focus,
+.nav-list.mobile .nav-item a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-list.mobile .nav-item button:hover,
+.nav-list.mobile .nav-item a:hover {
+  color: #C6D870;
+}
+
+/* Social dropdown rapi */
+.nav-list.mobile .social-dropdown a {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  outline: none;
+}
+
+.nav-list.mobile .social-dropdown a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Responsive */
+@media (max-width: 780px) {
+  .nav-list {
+      display: none;
+  }
+  .hamburger {
+      display: block;
+  }
+  .desktop-social-links {
+      display: none;
+  }
+}
