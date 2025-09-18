@@ -96,6 +96,8 @@
   border-left: 2px solid #333;
   padding: 10px;
   gap: 10px;
+  box-shadow: -2px 4px 10px rgba(0,0,0,0.5); /* tambahan */
+  z-index: 1001;
 }
 
 .nav-list.mobile.open {
