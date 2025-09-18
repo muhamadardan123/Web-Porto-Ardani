@@ -32,7 +32,10 @@ function Navbar({ currentPage, handlePageChange }) {
         <li className="nav-item">
           <button
             className={`nav-link ${currentPage === "home" ? "active" : ""}`}
-            onClick={() => handlePageChange("home")}
+            onClick={() => {
+              handlePageChange("home");
+              setMobileMenuOpen(false);
+            }}
             type="button"
           >
             Home
@@ -41,7 +44,10 @@ function Navbar({ currentPage, handlePageChange }) {
         <li className="nav-item">
           <button
             className={`nav-link ${currentPage === "about" ? "active" : ""}`}
-            onClick={() => handlePageChange("about")}
+            onClick={() => {
+              handlePageChange("about");
+              setMobileMenuOpen(false);
+            }}
             type="button"
           >
             About
@@ -50,7 +56,10 @@ function Navbar({ currentPage, handlePageChange }) {
         <li className="nav-item">
           <button
             className={`nav-link ${currentPage === "projects" ? "active" : ""}`}
-            onClick={() => handlePageChange("projects")}
+            onClick={() => {
+              handlePageChange("projects");
+              setMobileMenuOpen(false);
+            }}
             type="button"
           >
             Project
