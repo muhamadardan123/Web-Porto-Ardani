@@ -273,6 +273,59 @@ const About = () => {
               </a>
             </div>
           </div>
+          {/* Tambah sertifikat lain di sini */}
+          <div className="edu-item">
+            <div>
+              <h4>dicoding</h4>
+              <p>Issued by dicoding</p>
+              <p>2025</p>
+              <p>Memulai Pemrograman dengan Python</p>
+              <a
+                href="https://drive.google.com/drive/u/1/folders/1l_v9PM7c_afk2Y4m7aNuoW_HWjAlyqBS"
+                className="ip-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Document ↗
+              </a>
+            </div>
+          </div>
+          {/* Tambah sertifikat lain di sini */}
+          <div className="edu-item">
+            <div>
+              <h4>dicoding</h4>
+              <p>Issued by dicoding</p>
+              <p>2025</p>
+              <p>Belajar Dasar AI</p>
+              <a
+                href="https://drive.google.com/drive/u/1/folders/19m8AK6q1hzOGu550jpXs_wwgLD8l_dFe"
+                className="ip-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Document ↗
+              </a>
+            </div>
+          </div>
+          {/* Tambah sertifikat lain di sini */}
+          <div className="edu-item">
+            <div>
+              <h4>ITBox</h4>
+              <p>Issued by ITBox</p>
+              <p>2025</p>
+              <p>Dasar OSI Layer & IP Address</p>
+              <a
+                href="https://drive.google.com/drive/u/1/folders/1sBuEmLUBMtxDXvd5lLEa57DDQY16emc3"
+                className="ip-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Document ↗
+              </a>
+            </div>
+          </div>
+
+
 
         </div>
 
@@ -280,5 +333,4 @@ const About = () => {
     </section>
   );
 };
-
 export default About;
