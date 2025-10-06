@@ -281,7 +281,7 @@ const About = () => {
               <p>2025</p>
               <p>Memulai Pemrograman dengan Python</p>
               <a
-                href="https://drive.google.com/drive/u/1/folders/1l_v9PM7c_afk2Y4m7aNuoW_HWjAlyqBS"
+                href="https://www.dicoding.com/certificates/98XWOLWM9ZM3"
                 className="ip-link"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -298,7 +298,7 @@ const About = () => {
               <p>2025</p>
               <p>Belajar Dasar AI</p>
               <a
-                href="https://drive.google.com/drive/u/1/folders/19m8AK6q1hzOGu550jpXs_wwgLD8l_dFe"
+                href="https://www.dicoding.com/certificates/4EXG3QN3DZRL"
                 className="ip-link"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -315,7 +315,7 @@ const About = () => {
               <p>2025</p>
               <p>Dasar OSI Layer & IP Address</p>
               <a
-                href="https://drive.google.com/drive/u/1/folders/1sBuEmLUBMtxDXvd5lLEa57DDQY16emc3"
+                href="https://itbox.id/certificate-verifier/13F27B956-75B51A52C1-12D731896"
                 className="ip-link"
                 target="_blank"
                 rel="noopener noreferrer"
